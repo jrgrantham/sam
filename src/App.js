@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css';
-import ben from './images/humberBridge.JPG'
+import sam from './images/humberBridge.JPG'
 
 export default function App() {
   return (
     <Welcome className="App">
-      <h1>Hello, my name is Ben</h1>
+      <h1>Hello, my name is Sam</h1>
       <div className='image'>
-        <img src={ben} alt='ben' />
+        <img src={sam} alt='ben' />
       </div>
     </Welcome>
   );
