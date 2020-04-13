@@ -7,10 +7,14 @@ export default function App() {
   return (
     <Welcome className="App">
       <h2>Hello, my name is Sam</h2>
+      <h5>I live in Aberdeen.</h5>
       <div className='image'>
         <img src={sam} alt='sam' />
       </div>
-      <p>I live in Aberdeen.</p>
+      <div>
+      <a href='https://jamesgrantham.me/'>visit my dad</a>
+      <a href='https://bengrantham.netlify.com/'>visit my brother, Ben</a>
+      </div>
     </Welcome>
   );
 }
@@ -24,16 +28,28 @@ const Welcome = styled.div`
     margin: 20px;
   }
 
-  p {
-    margin-top: 40px;
+  h5 {
+    margin-bottom: 40px;
+  }
+
+  a {
+    display: inline-block;
+    color: orange;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px;
+    margin: 70px 10px 0 10px;
+    width: 220px;
+    text-align: center;
   }
   
   .image {
     display: flex;
     max-width: 60%;
     max-height: 60%;
-    border: 30px solid red;
-    border-radius: 100px;
+    // border: 30px solid red;
+    border-radius: 50px;
     overflow: hidden;
   }
 
