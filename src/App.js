@@ -6,10 +6,11 @@ import sam from './images/humberBridge.JPG'
 export default function App() {
   return (
     <Welcome className="App">
-      <h1>Hello, my name is Sam</h1>
+      <h2>Hello, my name is Sam</h2>
       <div className='image'>
-        <img src={sam} alt='ben' />
+        <img src={sam} alt='sam' />
       </div>
+      <p>I live in Aberdeen.</p>
     </Welcome>
   );
 }
@@ -18,16 +19,26 @@ const Welcome = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h2 {
+    margin: 20px;
+  }
+
+  p {
+    margin-top: 40px;
+  }
   
   .image {
-    width: 80vw;
-    height: 80vh;
-    // border: 1px solid red;
+    display: flex;
+    max-width: 60%;
+    max-height: 60%;
   }
 
   img {
-    max-width: 100%;
-    max-height: 100%;
-    // border: 1px solid red;
+    border: 30px solid red;
+    border-radius: 100px;
+    padding: 30px;
+    width: 100%;
+    height: auto;
   }
 `
