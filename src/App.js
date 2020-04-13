@@ -15,6 +15,20 @@ export default function App() {
       <a href='https://jamesgrantham.me/'>visit my dad</a>
       <a href='https://bengrantham.netlify.com/'>visit my brother, Ben</a>
       </div>
+      <div className='list'>
+        <h2>My hobbies</h2>
+        <h5>remote control cars</h5>
+        <h5>biking</h5>
+        <h5>swimming</h5>
+        <h5>camping</h5>
+      </div>
+      <div className='list'>
+        <h2>Things I like</h2>
+        <h5>bonfires</h5>
+        <h5>holidays</h5>
+        <h5>sweets</h5>
+        <h5>Hull fair</h5>
+      </div>
     </Welcome>
   );
 }
@@ -25,11 +39,14 @@ const Welcome = styled.div`
   align-items: center;
 
   h2 {
+    text-align: center;
     margin: 20px;
   }
 
   h5 {
     margin-bottom: 40px;
+    text-align: center;
+
   }
 
   a {
@@ -42,6 +59,19 @@ const Welcome = styled.div`
     margin: 70px 10px 0 10px;
     width: 220px;
     text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: purple;
+      transform: scale(1.1);
+    }
+  }
+
+  .list {
+    border: 8px solid blue;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 350px;
   }
   
   .image {
